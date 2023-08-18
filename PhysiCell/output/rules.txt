@@ -1,0 +1,18 @@
+Cell Hypothesis Rules
+
+In default cells:
+
+In lung epithelium cells:
+
+In immune cells:
+
+In CD8 Tcell cells:
+
+In macrophage cells:
+
+In neutrophil cells:
+
+In DC cells:
+
+In CD4 Tcell cells:
+

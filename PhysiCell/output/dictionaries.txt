@@ -1,0 +1,232 @@
+Signals: 
+=======
+0 : virion
+1 : interferon 1
+2 : pro-inflammatory cytokine
+3 : chemokine
+4 : debris
+5 : ROS
+6 : VTEST
+7 : intracellular virion
+8 : intracellular interferon 1
+9 : intracellular pro-inflammatory cytokine
+10 : intracellular chemokine
+11 : intracellular debris
+12 : intracellular ROS
+13 : intracellular VTEST
+14 : virion gradient
+15 : interferon 1 gradient
+16 : pro-inflammatory cytokine gradient
+17 : chemokine gradient
+18 : debris gradient
+19 : ROS gradient
+20 : VTEST gradient
+21 : pressure
+22 : volume
+23 : contact with default
+24 : contact with lung epithelium
+25 : contact with immune
+26 : contact with CD8 Tcell
+27 : contact with macrophage
+28 : contact with neutrophil
+29 : contact with DC
+30 : contact with CD4 Tcell
+31 : contact with live cell
+32 : contact with dead cell
+33 : contact with basement membrane
+34 : damage
+35 : dead
+36 : total attack time
+37 : time
+38 : custom:generation
+39 : custom:r_max
+40 : custom:max_apoptosis_half_max
+41 : custom:apoptosis_hill_power
+42 : custom:infected_cell_chemokine_secretion_rate
+43 : custom:debris_secretion_rate
+44 : custom:infected_cell_chemokine_secretion_activated
+45 : custom:TCell_detection
+46 : custom:TCell_contact_time
+47 : custom:cell_attachment_rate
+48 : custom:cell_attachment_lifetime
+49 : custom:TCell_contact_death_threshold
+50 : custom:max_attachment_distance
+51 : custom:elastic_attachment_coefficient
+52 : custom:time_to_next_phagocytosis
+53 : custom:material_internalisation_rate
+54 : custom:threshold_macrophage_volume
+55 : custom:threshold_neutrophil_volume
+56 : custom:exhausted_macrophage_death_rate
+57 : custom:ability_to_phagocytose_infected_cell
+58 : custom:time_of_DC_departure
+59 : custom:phagocytosis_rate
+60 : custom:sensitivity_to_debris_chemotaxis
+61 : custom:sensitivity_to_chemokine_chemotaxis
+62 : custom:activated_speed
+63 : custom:activated_cytokine_secretion_rate
+64 : custom:DC_leaving_not_dying
+65 : custom:activated_immune_cell
+66 : custom:antiviral_state
+67 : custom:antiviral_state_timer
+68 : custom:eclipse_time
+69 : custom:displacement_stor
+70 : custom:VEx
+71 : custom:VAtthi
+72 : custom:VAttlo
+73 : custom:Bhi
+74 : custom:Blo
+75 : custom:VEn
+76 : custom:Vnuc
+77 : custom:VRel
+78 : apoptotic
+79 : necrotic
+
+Behaviors: 
+=========
+0 : virion secretion
+1 : interferon 1 secretion
+2 : pro-inflammatory cytokine secretion
+3 : chemokine secretion
+4 : debris secretion
+5 : ROS secretion
+6 : VTEST secretion
+7 : virion secretion target
+8 : interferon 1 secretion target
+9 : pro-inflammatory cytokine secretion target
+10 : chemokine secretion target
+11 : debris secretion target
+12 : ROS secretion target
+13 : VTEST secretion target
+14 : virion uptake
+15 : interferon 1 uptake
+16 : pro-inflammatory cytokine uptake
+17 : chemokine uptake
+18 : debris uptake
+19 : ROS uptake
+20 : VTEST uptake
+21 : virion export
+22 : interferon 1 export
+23 : pro-inflammatory cytokine export
+24 : chemokine export
+25 : debris export
+26 : ROS export
+27 : VTEST export
+28 : cycle entry
+29 : exit from cycle phase 1
+30 : exit from cycle phase 2
+31 : exit from cycle phase 3
+32 : exit from cycle phase 4
+33 : exit from cycle phase 5
+34 : apoptosis
+35 : necrosis
+36 : migration speed
+37 : migration bias
+38 : migration persistence time
+39 : chemotactic response to virion
+40 : chemotactic response to interferon 1
+41 : chemotactic response to pro-inflammatory cytokine
+42 : chemotactic response to chemokine
+43 : chemotactic response to debris
+44 : chemotactic response to ROS
+45 : chemotactic response to VTEST
+46 : cell-cell adhesion
+47 : cell-cell adhesion elastic constant
+48 : adhesive affinity to default
+49 : adhesive affinity to lung epithelium
+50 : adhesive affinity to immune
+51 : adhesive affinity to CD8 Tcell
+52 : adhesive affinity to macrophage
+53 : adhesive affinity to neutrophil
+54 : adhesive affinity to DC
+55 : adhesive affinity to CD4 Tcell
+56 : relative maximum adhesion distance
+57 : cell-cell repulsion
+58 : cell-BM adhesion
+59 : cell-BM repulsion
+60 : phagocytose dead cell
+61 : phagocytose default
+62 : phagocytose lung epithelium
+63 : phagocytose immune
+64 : phagocytose CD8 Tcell
+65 : phagocytose macrophage
+66 : phagocytose neutrophil
+67 : phagocytose DC
+68 : phagocytose CD4 Tcell
+69 : attack default
+70 : attack lung epithelium
+71 : attack immune
+72 : attack CD8 Tcell
+73 : attack macrophage
+74 : attack neutrophil
+75 : attack DC
+76 : attack CD4 Tcell
+77 : fuse to default
+78 : fuse to lung epithelium
+79 : fuse to immune
+80 : fuse to CD8 Tcell
+81 : fuse to macrophage
+82 : fuse to neutrophil
+83 : fuse to DC
+84 : fuse to CD4 Tcell
+85 : transform to default
+86 : transform to lung epithelium
+87 : transform to immune
+88 : transform to CD8 Tcell
+89 : transform to macrophage
+90 : transform to neutrophil
+91 : transform to DC
+92 : transform to CD4 Tcell
+93 : custom:generation
+94 : custom:r_max
+95 : custom:max_apoptosis_half_max
+96 : custom:apoptosis_hill_power
+97 : custom:infected_cell_chemokine_secretion_rate
+98 : custom:debris_secretion_rate
+99 : custom:infected_cell_chemokine_secretion_activated
+100 : custom:TCell_detection
+101 : custom:TCell_contact_time
+102 : custom:cell_attachment_rate
+103 : custom:cell_attachment_lifetime
+104 : custom:TCell_contact_death_threshold
+105 : custom:max_attachment_distance
+106 : custom:elastic_attachment_coefficient
+107 : custom:time_to_next_phagocytosis
+108 : custom:material_internalisation_rate
+109 : custom:threshold_macrophage_volume
+110 : custom:threshold_neutrophil_volume
+111 : custom:exhausted_macrophage_death_rate
+112 : custom:ability_to_phagocytose_infected_cell
+113 : custom:time_of_DC_departure
+114 : custom:phagocytosis_rate
+115 : custom:sensitivity_to_debris_chemotaxis
+116 : custom:sensitivity_to_chemokine_chemotaxis
+117 : custom:activated_speed
+118 : custom:activated_cytokine_secretion_rate
+119 : custom:DC_leaving_not_dying
+120 : custom:activated_immune_cell
+121 : custom:antiviral_state
+122 : custom:antiviral_state_timer
+123 : custom:eclipse_time
+124 : custom:displacement_stor
+125 : custom:VEx
+126 : custom:VAtthi
+127 : custom:VAttlo
+128 : custom:Bhi
+129 : custom:Blo
+130 : custom:VEn
+131 : custom:Vnuc
+132 : custom:VRel
+133 : is_movable
+134 : immunogenicity to default
+135 : immunogenicity to lung epithelium
+136 : immunogenicity to immune
+137 : immunogenicity to CD8 Tcell
+138 : immunogenicity to macrophage
+139 : immunogenicity to neutrophil
+140 : immunogenicity to DC
+141 : immunogenicity to CD4 Tcell
+142 : cell attachment rate
+143 : cell detachment rate
+144 : maximum number of cell attachments
+145 : damage rate
+
