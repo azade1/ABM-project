@@ -33,7 +33,7 @@
 #                                                                             #
 # BSD 3-Clause License (see https://opensource.org/licenses/BSD-3-Clause)     #
 #                                                                             #
-# Copyright (c) 2015-2021, Paul Macklin and the PhysiCell Project             #
+# Copyright (c) 2015-2018, Paul Macklin and the PhysiCell Project             #
 # All rights reserved.                                                        #
 #                                                                             #
 # Redistribution and use in source and binary forms, with or without          #
@@ -68,6 +68,15 @@
 #include "../core/PhysiCell.h"
 #include "../modules/PhysiCell_standard_modules.h" 
 
+#include "./submodel_data_structures.h" 
+#include "./internal_viral_dynamics.h"
+#include "./internal_viral_response.h" 
+#include "./lymph_node_DCs.h"
+#include "./external_immune.h"
+#include "./receptor_dynamics.h" 
+#include "./immune_submodels.h" 
+#include "./epithelium_submodel.h" 
+
 using namespace BioFVM; 
 using namespace PhysiCell;
 
@@ -80,13 +89,9 @@ void setup_tissue( void );
 void setup_microenvironment( void ); 
 
 // custom pathology coloring function 
+std::vector<std::string> epithelium_coloring_function( Cell* );
+std::vector<std::string> tissue_coloring_function( Cell* );
 
-std::vector<std::string> my_coloring_function( Cell* );
+// eventually move this to a tissue submodel 
 
-// custom functions can go here 
-
-void phenotype_function( Cell* pCell, Phenotype& phenotype, double dt );
-void custom_function( Cell* pCell, Phenotype& phenotype , double dt );
-
-void contact_function( Cell* pMe, Phenotype& phenoMe , Cell* pOther, Phenotype& phenoOther , double dt ); 
-
+void SVG_plot_virus( std::string filename , Microenvironment& M, double z_slice , double time, std::vector<std::string> (*cell_coloring_function)(Cell*) );
